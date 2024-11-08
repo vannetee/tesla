@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+/* body{ */
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* background-image: url('https://venturebeat.com/wp-content/uploads/2024/10/GZlHFYyWIBE8rKB.jpg?w=750'); */
+    /* height: 100vh; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: 69%; */
+/* } */
+.img{
+    
+    background-image: url('https://www.notateslaapp.com/img/containers/article_images/robotaxi/robotaxi_83.jpg/e4a7f049b6e66679d3534269faccb9ce/robotaxi_83.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 62%;
+    text-align: center;
+    justify-items: center;
+    animation: change 8s infinite ease-in-out;
+}
+@keyframes change{
+    40%
+    {
+        background-image: url('https://images.frandroid.com/wp-content/uploads/2024/10/we-robot-55-27-screenshot.jpg');
+    }
+    60%
+    {
+        background-image: url('https://images-stag.jazelc.com/uploads/theautopian-m2en/Tesla_Cybercab_4.jpeg'); 
+    }
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(253, 254, 255, 0.993);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    padding: 0px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+header .logo{
+    font-size: 30px;
+
+}
+header .navbar ul{
+    width: 900px;
+    list-style: none;
+}
+ header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 15px;
+    padding: 35px;
+    color: black;
+    display: block;
+}
+header .navbar ul li a i:hover{
+    background-color: rgba(206, 37, 169, 0.425);
+    color: rgb(45, 47, 49);
+    display: 
+
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 300px;
+    background-color: rgb(66, 61, 62);
+    display: none;
+
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 2px solid rgba(0, 0, 0, .1);
+}
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+header .icons {
+    width: 900px;
+    height: 87px;
+    cursor: pointer;
+    
+
+}
+header .icons i{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 34px;
+    color: rgb(24, 23, 23);
+    
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+
+}
+header label{
+    width: 67px;
+    height: 34px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(45, 47, 49);
+    cursor: pointer;
+    display: none;
+    background-color: rgba(231, 227, 222, 0.425);
+    margin-right: 75px;
+    
+
+}
+@media  (max-width: 939px){
+    header{
+        padding: 20px;
+    }
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(233, 233, 223, 0.575);
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+
+    }
+    header .navbar ul li{
+        width: 100%;
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header ul li ul li{
+        background-color: aliceblue;
+    }
+    header .navbar ul li ul li ul{
+        width: 100%;
+        left: 0;
+    }
+    
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}
+.btn{
+    font-size: 35px;
+    width: 500px;
+    height: 250px;
+    padding: 19px;
+    justify-items: center;
+    align-items: center;
+    margin-top: -300px;
+    margin-left: 55px;
+
+}
+.btn h2{
+    font-size: 45px;
+    color: rgb(245, 238, 232);
+}
+.btn button{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(79, 80, 80);
+    justify-content: space-between;
+    justify-items: center;
+    background-color: rgb(253, 252, 250);
+    border-radius: 8px;
+    margin-top: 60px;
+
+}
+@media  (max-width: 939px){
+    .btn{
+        width: 380px;
+        height: 250px;
+        /* background-color: aqua; */
+        margin-left: 15px;
+    }
+    .btn h2{
+        font-size: 39px;
+        color: rgb(245, 238, 232);
+    }
+    .btn button{
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(79, 80, 80);
+        justify-content: space-between;
+        justify-items: center;
+        background-color: rgb(253, 252, 250);
+        border-radius: 8px;
+        margin-top: 60px;
+        margin-right: 5px;
+
+    }
+    .topbtn{
+        width: 150px;
+        height: 150px;
+        /* background-color: blue;  */
+    
+    
+    }
+    .topbtn .btn1{
+        font-size: 30px;
+        color: white;
+        justify-content: space-between;
+        justify-items: center;
+         display: flex;
+        align-items: center;
+        background-color: rgb(243, 0, 182);
+        margin-left: 220px;
+
+    }
+    .topbtn .btn2{
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        justify-content: space-between;
+        display: flex;
+        justify-items: center;
+        background-color: rgb(225, 225, 235);
+        margin-left: 60px;
+        margin-top: px;
+        
+    }
+    .topbtn h4{
+        font-size: 25px;
+        color: aliceblue;
+    }
+    .topbtn p{
+        font-size: 15px;
+        color: aliceblue;
+    }
+
+}
+.masthead{
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+@media(max-width: 768px){
+    .masthead{
+        min-height: 40vh;
+    }
+    
+}
+.topbtn{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    margin-top: -300px;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+.topbtn .btn1{
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    margin-top: -150px; 
+}
+.topbtn .btn2{
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(212, 224, 231);
+    margin-left: 21px;
+    margin-top: 10px;
+}
+.masthead h4{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-align: center;
+    text-transform: none;
+    
+}
+.masthead p{
+    font-size: 30px;
+    color: rgb(247, 238, 238);
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+.buttom{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(180, 0, 0);  */
+    background-position: 80px;
+    margin-top: 98px;
+}
+.buttom img{
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 0px;
+}
+.text{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(218, 212, 203);
+}
+.buttom .text h4{
+
+    font-size: 15px;
+    color: rgb(94, 72, 55);
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    overflow: auto;
+    margin-top: 56pxpx;
+    text-align: center;
+}
+.buttom .text h4{
+    right: 15px;
+    left: 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+.buttom .text h1{
+    color: black;
+    text-align: center;
+    overflow: auto;
+    justify-content: center;
+    justify-items: center;
+    position: relative; 
+    text-decoration: underline;
+    margin-top: 98px;
+}
+.text h4 i{
+    font-size: 20px;
+    justify-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
